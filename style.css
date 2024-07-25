@@ -22,18 +22,6 @@
    
 }
 
-/*
-                Responsive Design here 
-                    And media queries
-*/
-
-@media screen and (min-width: 40em){
-
-    :root {
-        --primary-clr: #faf8f9;
-    }
-    
-}
 
 
 html {
@@ -45,5 +33,32 @@ html {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--ff-haeding);
     line-height: var(--leading-500);
+    
+}
+
+
+.svg-menu {
+    background-color: red;
+    display: none;
+    width:4rem;
+    height: 4rem;
+}
+
+
+/*
+                Responsive Design here 
+                    And media queries
+*/
+
+@media screen and (max-width: 500px){
+
+    :root {
+        --primary-clr: #faf8f9;
+    }
+
+    .svg-menu {
+        display: block;
+        background-color: blue;
+    }
     
 }
